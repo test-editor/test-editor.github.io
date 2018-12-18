@@ -1,9 +1,8 @@
 Hier finden Sie die nach deutschem Recht erforderlichen [rechtlichen
-Hinweise](#impressum) zu den [GitHub-Projekten][gh], welche die beteiligten Firmen
-[akquinet AG][akquinetag] & [IDUNA Vereinigte Lebensversicherung aG für Handwerk, Handel und Gewerbe][signalidunaag] zur Verfügung stellen.
+Hinweise](#impressum) zu den [GitHub-Projekten][github], welche die beteiligten Firmen [akquinet AG][akquinetag] und [IDUNA Vereinigte Lebensversicherung aG für Handwerk, Handel und Gewerbe][signaliduna_ag] zur Verfügung stellen.
 
 This page contains the [legal information](#imprint) required by
-German laws for the [GitHub projects][gh] provided by the companies [akquinet AG][akquinetag] & [Signal-Iduna Lebensversicherung a.G.][signalidunaag] at GitHub.
+German laws for the [GitHub projects][github] provided by the companies [akquinet AG][akquinetag] and [IDUNA Vereinigte Lebensversicherung aG für Handwerk, Handel und Gewerbe][signaliduna_ag] at GitHub.
 
 ----------------------------------------------------------------------
 Impressum / Imprint
@@ -58,6 +57,8 @@ akquinet AG übernimmt keine Gewähr für die Aktualität, Richtigkeit und Volls
 Mehr zum Thema Datenschutz finden Sie [hier][ppde].
 
 ----------------------------------------------------------------------
+**IDUNA Vereinigte Lebensversicherung aG für Handwerk, Handel und Gewerbe**  
+
 ### Registergericht
 ```
 Amtsgericht Hamburg
@@ -137,13 +138,13 @@ Der Test-Editor wird unter der Eclipse Public Licence v1.0 siehe http://www.ecli
 Die akquinet AG und die Signal Iduna Gruppe übernehmen keine Gewähr für die Aktualität, Richtigkeit und Vollständigkeit der Informationen auf diesen Seiten oder den jederzeitigen störungsfreien Zugang. Wenn wir auf Internetseiten Dritter verweisen (Links), übernehmen wir trotz sorgfältiger inhaltlicher Kontrolle keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich. Mit dem Betätigen des Verweises verlassen Sie das Informationsangebot der akquinet AG und Signal Iduna Gruppe. Weiterhin schließen beide Unternehmungen ihre Haftung bei Serviceleistungen aus, insbesondere beim Download der zur Verfügung gestellten Dateien auf den Internetseiten.
 
 
-[github]:        https://github.com/test-editor
-[akquinet]:      https://www.akquinet.de/impressum/index.jsp
-[signaliduna]:   https://www.signal-iduna.de/some-impressum.php
-[akquinetag:     https://www.akquinet.de/
-[signalidunaag]: htttps://www.signal-iduna.de/
-[ppde]:          https://www.akquinet.de/datenschutz/index.jsp
-[ppdesi]:        https://www.signal-iduna.de/datenschutz-und-rechtliche-hinweise.php
+[github]:         https://github.com/test-editor
+[akquinet]:       https://www.akquinet.de/impressum/index.jsp
+[signaliduna]:    https://www.signal-iduna.de/some-impressum.php
+[akquinetag]:     https://www.akquinet.de/
+[signaliduna_ag]:  htttps://www.signal-iduna.de/
+[ppde]:           https://www.akquinet.de/datenschutz/index.jsp
+[ppdesi]:         https://www.signal-iduna.de/datenschutz-und-rechtliche-hinweise.php
 
 ----------------------------------------------------------------------
 
