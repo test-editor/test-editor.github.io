@@ -1,8 +1,8 @@
 Hier finden Sie die nach deutschem Recht erforderlichen [rechtlichen
-Hinweise](#impressum) zu den [GitHub-Projekten][github], welche die beteiligten Firmen [akquinet AG][akquinetag] und [IDUNA Vereinigte Lebensversicherung aG für Handwerk, Handel und Gewerbe][signaliduna_ag] zur Verfügung stellen.
+Hinweise](#impressum) zu den [GitHub-Projekten][github], welche die beteiligten Firmen [akquinet AG][akquinetag] und [IDUNA Vereinigte Lebensversicherung aG für Handwerk, Handel und Gewerbe][signalidunaag] zur Verfügung stellen.
 
 This page contains the [legal information](#imprint) required by
-German laws for the [GitHub projects][github] provided by the companies [akquinet AG][akquinetag] and [IDUNA Vereinigte Lebensversicherung aG für Handwerk, Handel und Gewerbe][signaliduna_ag] at GitHub.
+German laws for the [GitHub projects][github] provided by the companies [akquinet AG][akquinetag] and [IDUNA Vereinigte Lebensversicherung aG für Handwerk, Handel und Gewerbe][signalidunaag] at GitHub.
 
 ----------------------------------------------------------------------
 Impressum / Imprint
@@ -142,7 +142,7 @@ Die akquinet AG und die Signal Iduna Gruppe übernehmen keine Gewähr für die A
 [akquinet]:       https://www.akquinet.de/impressum/index.jsp
 [signaliduna]:    https://www.signal-iduna.de/some-impressum.php
 [akquinetag]:     https://www.akquinet.de/
-[signaliduna_ag]:  htttps://www.signal-iduna.de/
+[signalidunaag]:  https://www.signal-iduna.de/
 [ppde]:           https://www.akquinet.de/datenschutz/index.jsp
 [ppdesi]:         https://www.signal-iduna.de/datenschutz-und-rechtliche-hinweise.php
 
