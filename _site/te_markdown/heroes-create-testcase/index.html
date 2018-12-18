@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Tutorial: test case “create hero” | Test-Editor-Web</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Tutorial: test case “create hero”" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write User Acceptance Tests as they were meant to be" />
+<meta property="og:description" content="Write User Acceptance Tests as they were meant to be" />
+<link rel="canonical" href="http://localhost:4000/te_markdown/heroes-create-testcase/" />
+<meta property="og:url" content="http://localhost:4000/te_markdown/heroes-create-testcase/" />
+<meta property="og:site_name" content="Test-Editor-Web" />
+<script type="application/ld+json">
+{"headline":"Tutorial: test case “create hero”","@type":"WebPage","url":"http://localhost:4000/te_markdown/heroes-create-testcase/","description":"Write User Acceptance Tests as they were meant to be","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Test-Editor-Web" /></head><body><header class="site-header" role="banner">
+
+    <div class="wrapper" bla="test"><a class="site-title" rel="author" href="/">Test-Editor-Web</a>
+  
+
+        <nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+  
+          <div class="trigger">
+            <a class="page-link" href="/te_markdown/documentation">Documentation</a>
+            <a class="page-link" href="/te_markdown//tutorials">Tutorials</a> 
+            <a class="page-link" href="/te_markdown/screencasts">Screencasts</a> 
+          </div>
+        </nav>
+
+    </div>
+  </header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Tutorial: test case &quot;create hero&quot;</h1>
+  </header>
+
+  <div class="post-content">
+    <p>Estimated reading time: 8 minutes</p>
+
+<p>Test cases implement test specifications. They are executable and are therefore more strict on syntax than test specifications are. The vocabulary that is used within these
+test cases are largely controlled by the user of the test editor, however, sane defaults are provided.</p>
+
+<h2 id="how-do-i-write-test-cases">How do I write test cases?</h2>
+
+<p>The software under test that is used for this example is an implementation of the heroes tutorial of the angular framework (see <a href="https://angular.io/tutorial">here</a>).</p>
+
+<p>You want to know more about the software that is tested here? <a href="/te_markdown/sut-heroes" class="web-button-grey reduced-padding">read more</a></p>
+
+<p>The test specification that is implemented in this example is described in detail in this <a href="/te_markdown/heroes-create-spec">tutorial</a>.</p>
+
+<p>Given you have a running instance of the test-editor-web (see <a href="/te_markdown/local-setup">here</a>), the following steps are necessary to implement the test specification.</p>
+<ul>
+  <li>navigate to (or create) the folder to hold the test case</li>
+  <li>create a new file with the extension ‘.tcl’ (e.g. CreateHero.tcl) by clicking the new file button on the left corner of the <a href="/te_markdown/terminology#test-navigator">Test-Navigator</a>. Hit the  <code class="highlighter-rouge">RETURN</code> key on your keyboard to create the file.</li>
+</ul>
+
+<p><img src="/images/tutorial/tutorial.heroes.create.testcase.1.create-file.gif" alt="screencase: create test case file" title="screencast: create test case file" /></p>
+
+<ul>
+  <li>Write the test case name into the opened editor, prefixing it with ‘#’ (e.g. ‘# CreateHero’)</li>
+  <li>State that this test case implements the <code class="highlighter-rouge">CreateHero</code> specification (‘implements CreateHero’ in the same line)</li>
+  <li>Notice the yellow warning icon on the left of the editor in the first line, it indicates that your mentioned specification is not implemented yet.</li>
+</ul>
+
+<p><img src="/images/tutorial/tutorial.heroes.create.testcase.2.enter-name.gif" alt="screencase: name test case" title="screencast: name test case" /></p>
+
+<ul>
+  <li>Copy the specification steps of the test specification (all three lines starting with ‘*’) and the warning will dissapear.</li>
+</ul>
+
+<p><img src="/images/tutorial/tutorial.heroes.create.testcase.3.copy-tsl.gif" alt="screencase: copy specification" title="screencast: copy specification" /></p>
+
+<ul>
+  <li>
+    <p>Now implement each specification step with the actual test flow intended</p>
+
+    <ul>
+      <li><code class="highlighter-rouge">* Given: I am on the heroes page</code>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Component: org.testeditor.fixture.web.WebBrowser
+    - Start &lt;Firefox&gt;
+    - Browse "http://sut:4200/heroes"
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/images/tutorial/tutorial.heroes.create.testcase.4.enter-given.gif" alt="screencase: enter given" title="screencast: enter given" /></p>
+
+<ul>
+  <li><code class="highlighter-rouge">* When: I create a hero named "Sancho"</code>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Component: org.testeditor.heroes.Heroes
+    - Wait "2" seconds until &lt;Add&gt; is found
+    - Click &lt;Add&gt;
+    - Enter "Sancho" into &lt;Name&gt;
+    - Wait "2" seconds until &lt;Save&gt; is found
+    - Click &lt;Save&gt;
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><img src="/images/tutorial/tutorial.heroes.create.testcase.5.enter-when.gif" alt="screencase: enter when" title="screencast: enter when" /></p>
+
+<ul>
+  <li><code class="highlighter-rouge">* Then: The hero should be the last one of the list</code>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Component: org.testeditor.heroes.Heroes
+    - Wait "2" seconds // until page is fully rendered after save
+    - actualName = Read &lt;LastHero&gt;
+    - assert actualName = "21 Sancho"
+</code></pre></div>    </div>
+  </li>
+  <li>and finally do some cleanup (closing the browser)
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Component: org.testeditor.fixture.web.WebBrowser
+    - Close browser
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><img src="/images/tutorial/tutorial.heroes.create.testcase.6.enter-then.gif" alt="screencase: enter then" title="screencast: enter then" /></p>
+
+<p>That’s it. Your first test in place.</p>
+
+<p>Do you want to know how to execute your test? 
+<a href="/te_markdown/heroes-create-testcase-execution" class="web-button-grey reduced-padding">read more</a></p>
+
+<p>Do you want to learn more about the editor and how the tests can be written, saved or making use of content completion etc.?
+<a href="/te_markdown/heroes-create-testcase-editor" class="web-button-grey reduced-padding">read more</a></p>
+
+<h2 id="some-reflections">Some reflections</h2>
+
+<p>The test case is expected to be written by a tester before the application is in place. The function of a test case is manifold.</p>
+
+<ul>
+  <li>It represents a concrete test execution plan that implements a test specification and can be readily understood by the domain expert who wrote the specification</li>
+  <li>It is concrete insofar as to be executable</li>
+  <li>It is the concrete and detailed expectation developers can realize their application for</li>
+  <li>It functions as a bridge between actual feature implementation (developer) and feature specification (domain expert), working as an artifact for discussion between domain expert, tester, and developer</li>
+</ul>
+
+<p>It is quite common to have the test case change because of implementation issues that could not have been foreseen. Changes need to be discussed though, which again has the benefit of sharing a common understanding of the feature to be implemented between domain expert, tester and developer.</p>
+
+<p>The vocabulary used in test cases is largely defined through artifacts written in the application mapping language (AML). The tester/developer writes mappings of the test vocabulary onto the actual implementation using this AML.
+For the given tutorial a minimal AML was provided (Heroes.aml), partially describing the software under test.</p>
+
+<p>Do you want to learn more about the AML?
+<a href="/te_markdown/heroes-create-aml" class="web-button-grey reduced-padding">read more</a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Test-Editor-Web</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Test-Editor-Web</li><li>
+            <div class="icon_mail"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg866"
+   width="20"
+   height="20"
+   viewBox="0 0 303 301"
+   sodipodi:docname="mail_thick.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata872">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs870" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     id="namedview868"
+     showgrid="false"
+     inkscape:zoom="1.4928528"
+     inkscape:cx="76.524302"
+     inkscape:cy="179.75881"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="35.110571,300"
+       orientation="0,1"
+       id="guide900"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-38.036452,0"
+       orientation="0,1"
+       id="guide902"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="0,116.30377"
+       orientation="1,0"
+       id="guide904"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="300,204.81166"
+       orientation="1,0"
+       id="guide906"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1">
+    <ellipse
+       style="opacity:1;fill:#828282;fill-opacity:0.9958678;stroke:#828282;stroke-width:0.377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98760328"
+       id="path898"
+       ry="149.68617"
+       rx="150.31967"
+       cy="151.0486"
+       cx="151.5972" />
+    <rect
+       style="opacity:1;fill:#ececec;fill-opacity:0;stroke:#ffffff;stroke-width:15.605;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect908"
+       width="195.16982"
+       height="123.5371"
+       x="55.413017"
+       y="89.0093" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10.99272346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 58.517623,95.915868 93.262457,78.667512 95.45686,-80.634199 -2.50587,-4.574143 -8.46618,3.000792 -85.21628,72.76745 L 65.46659,91.589155 61.630512,90.55505 Z"
+       id="path916"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 63.637914,211.02916 74.609966,-55.95747 -6.58324,-4.38883 -76.438633,57.05468 4.388822,5.85176 z"
+       id="path1425"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:10.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 166.40948,155.80316 76.43864,55.59173 7.73471,1.15151 -2.24868,-7.73474 -74.9757,-52.30012 z"
+       id="path1427"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg></div> 
+            <a class="u-email" href="mailto:testeditor.eng@gmail.com">testeditor.eng@gmail.com</a>
+          </li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/test-editor"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">test-editor</span></a></li><li><a href="https://www.twitter.com/testeditor3"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">testeditor</span></a></li>
+</ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>
+            <span style="font-style: italic;">' Write User Acceptance Tests as they were meant to be '</span> 
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

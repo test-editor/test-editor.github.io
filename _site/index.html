@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Test-Editor-Web | Write User Acceptance Tests as they were meant to be</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Test-Editor-Web" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write User Acceptance Tests as they were meant to be" />
+<meta property="og:description" content="Write User Acceptance Tests as they were meant to be" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Test-Editor-Web" />
+<script type="application/ld+json">
+{"headline":"Test-Editor-Web","@type":"WebSite","url":"http://localhost:4000/","name":"Test-Editor-Web","description":"Write User Acceptance Tests as they were meant to be","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Test-Editor-Web" /></head><body><header class="site-header" role="banner">
+
+    <div class="wrapper" bla="test"><a class="site-title" rel="author" href="/">Test-Editor-Web</a>
+  
+
+        <nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+  
+          <div class="trigger">
+            <a class="page-link" href="/te_markdown/documentation">Documentation</a>
+            <a class="page-link" href="/te_markdown//tutorials">Tutorials</a> 
+            <a class="page-link" href="/te_markdown/screencasts">Screencasts</a> 
+          </div>
+        </nav>
+
+    </div>
+  </header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
+  
+<div class="lead">
+  <div class="logo"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg4572"
+   width="250"
+   height="250"
+   viewBox="0 0 250.00002 250"
+   sodipodi:docname="Test-Editor_Logo_simple_250x250.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="Test-Editor_Logo_simple.svg_1540x1500.png"
+   inkscape:export-xdpi="111.53916"
+   inkscape:export-ydpi="111.53916">
+  <metadata
+     id="metadata4578">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4576" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="922"
+     id="namedview4574"
+     showgrid="false"
+     inkscape:zoom="1.45"
+     inkscape:cx="-143.338"
+     inkscape:cy="85.375657"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4572"
+     inkscape:measure-start="10.8479,996.201"
+     inkscape:measure-end="1216.78,999.817"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="5.0000002,150.00001"
+       orientation="1,0"
+       id="guide4016"
+       inkscape:locked="false"
+       inkscape:label="links"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-273.58614,245.00001"
+       orientation="0,1"
+       id="guide4018"
+       inkscape:locked="false"
+       inkscape:label="oben"
+       inkscape:color="rgb(255,0,29)" />
+    <sodipodi:guide
+       position="245.00001,830.00004"
+       orientation="1,0"
+       id="guide4020"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-273.58614,5.0000002"
+       orientation="0,1"
+       id="guide4022"
+       inkscape:locked="false"
+       inkscape:label="unten"
+       inkscape:color="rgb(255,0,66)" />
+  </sodipodi:namedview>
+  <g
+     id="g4669"
+     transform="matrix(0.35302342,0,0,0.36173166,-18.4398,-12.661687)"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96">
+    <g
+       transform="translate(25.31187,-28.927789)"
+       id="g4621">
+      <path
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.00157475;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 41.229686,390.56338 77.742774,0.29219 c -0.0502,-22.08436 5.43866,-40.25091 8.20019,-49.96412 l -31.741656,-12.7844 c 6.392196,-15.59091 7.621716,-26.01914 19.176596,-46.77273 l 32.49056,12.86194 c 7.56817,-12.7809 9.48888,-21.54988 29.4041,-41.81406 -13.79277,-11.98478 -17.35163,-15.54364 -25.34944,-22.18547 29.79483,-33.71129 24.51857,-24.76821 36.77785,-37.15231 7.66952,7.12529 15.9479,16.17822 24.36791,23.16702 23.59079,-17.38803 34.51415,-22.78737 42.11097,-26.24014 L 240.3467,158.90099 c 20.47709,-10.58499 35.72947,-15.82696 48.80006,-20.14483 l 13.36408,31.85601 c 23.01374,-6.77508 29.99123,-8.0845 50.04637,-9.85306 l -0.005,-75.181188 C 224.47752,91.838461 54.316237,191.93883 41.229686,390.56338 Z"
+         id="path4584"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccccccccccccc" />
+      <path
+         style="fill:#008000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 718.86865,436.24298 -77.74277,-0.29219 c 0.0502,22.08436 -5.43866,40.25091 -8.20019,49.96412 l 31.74165,12.7844 c -6.39219,15.59091 -7.62171,26.01914 -19.17659,46.77273 L 613.00019,532.6101 c -7.56817,12.7809 -9.48888,21.54988 -29.4041,41.81406 13.79277,11.98478 17.35163,15.54364 25.34944,22.18547 -29.79483,33.71129 -24.51857,24.76821 -36.77785,37.15231 -7.66952,-7.12529 -15.9479,-16.17822 -24.36791,-23.16702 -23.59079,17.38803 -34.51415,22.78737 -42.11097,26.24014 l 14.06284,31.0703 c -20.47709,10.58499 -35.72947,15.82696 -48.80006,20.14483 L 457.5875,656.19418 c -23.01374,6.77508 -29.99123,8.0845 -50.04637,9.85306 l 0.005,75.18119 C 535.62082,734.96789 705.7821,634.86753 718.86865,436.24298 Z"
+         id="path4584-7"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccccccccccccc" />
+      <path
+         style="fill:#febe09;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 358.38337,740.60498 -2.88709,-77.68971 c -22.06384,0.95323 -40.43964,-3.78818 -50.25765,-6.15021 l -11.47574,32.23789 c -15.83926,-5.74931 -26.30904,-6.55137 -47.51777,-17.24794 l 11.52258,-32.98933 c -13.07968,-7.03921 -21.91987,-8.59973 -42.98147,-27.66966 -11.41074,14.27132 -14.8211,17.97273 -21.13033,26.23545 -34.90145,-28.3914 -25.7501,-23.48525 -38.62514,-35.22787 6.80571,-7.95447 15.51255,-16.59612 22.15119,-25.29487 C 158.8438,553.9487 153.0023,543.25527 149.24177,535.80599 l -30.46926,15.3216 C 107.35903,531.10046 101.49774,516.0752 96.649007,503.1921 l 31.282883,-14.65555 c -7.71049,-22.71744 -9.30413,-29.63555 -11.8913,-49.60161 l -75.118105,3.07929 C 52.414991,569.7258 159.38982,735.65147 358.38337,740.60498 Z"
+         id="path4584-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccccccccccccc" />
+    </g>
+    <path
+       sodipodi:nodetypes="csccsc"
+       inkscape:connector-curvature="0"
+       id="path4623"
+       d="m 238.45853,544.42575 c -1.13436,-1.82487 -1.52175,-5.52356 -0.77723,-7.71946 25.17432,-74.24993 23.86222,-68.60022 35.85443,-96.15378 1.43824,0.90556 51.02456,18.83572 69.43526,67.2779 -42.59992,15.51362 -68.40095,28.3605 -95.41597,36.45386 -3.38512,1.01414 -8.22297,1.9572 -9.09649,0.14148 z"
+       style="fill:#878787;fill-opacity:1;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4625"
+       d="m 285.27144,428.32913 c 43.45523,21.15024 56.06642,43.57891 71.31523,69.20369 L 673.47516,186.51087 C 658.2817,163.3404 622.59602,131.47963 602.43412,121.42334 Z"
+       style="fill:#16a582;fill-opacity:1;fill-rule:evenodd;stroke:#16a582;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4627"
+       d="m 616.95664,108.63755 12.7844,-13.423616 c 29.15775,18.324306 50.53088,37.436276 70.31419,64.561216 l -14.38245,15.66089 c -2.29581,-9.80163 -47.04637,-52.7964 -68.71614,-66.79849 z"
+       style="fill:#878787;fill-opacity:1;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path4629"
+       d="m 643.32447,81.950119 c 34.30379,25.164591 45.59768,36.808411 70.7936,66.478871 l 32.44041,-34.03846 c 4.60306,-7.93118 3.42411,-11.41809 -0.31961,-17.738352 L 696.85913,49.989122 c -2.45976,-2.857675 -12.19183,-5.63732 -18.37757,-0.95883 z"
+       style="fill:#eb431c;fill-opacity:1;fill-rule:evenodd;stroke:#eb431c;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg></div> 
+  <div class="tedi"><img src="/images/nrobot1.gif" alt="tedi"></div> 
+    <h1 class="headline_1">Test-Editor-Web</h1>
+    <div id="headline_2">&laquo; User Acceptance Tests</div>
+    <div id="headline_3">as they were meant to be &raquo;</div>
+    <p class="phrase_main">Designed to bridge the gap between domain experts, 
+      testers, and developers, <em>Test-Editor-Web</em> is a modern application that integrates well with container technologies. 
+      It is dedicated to automate the tip of the testing pyramid&mdash;acceptance testing&mdash;to enable automated product releases and provide confidence in reliable product operation.
+    </p>
+  </div>
+  <div class="get-button-big">
+    <a class="web-button" href="/te_markdown/download">
+        <i class="fa fa-cloud-download-alt"></i> Get Test-Editor-Web
+    </a>
+  </div>
+  <hr>
+  <div class="row-fluid">
+    <div class="span4">
+      <div class="icons"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg4572"
+   width="39"
+   height="40"
+   viewBox="0 0 1462.9433 1500.5327"
+   sodipodi:docname="test_first_icon.1.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="/home/u096310/dev/workspaces/oxygen3/images/Test-Editor_Logo_simple.svg_1540x1500.png"
+   inkscape:export-xdpi="111.53916"
+   inkscape:export-ydpi="111.53916">
+  <metadata
+     id="metadata4578">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4576" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="1"
+     gridtolerance="1"
+     guidetolerance="1"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     id="namedview4574"
+     showgrid="false"
+     inkscape:zoom="11.596551"
+     inkscape:cx="29.261005"
+     inkscape:cy="19.321138"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4572"
+     inkscape:measure-start="10.8479,996.201"
+     inkscape:measure-end="1216.78,999.817"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="0,1020.195"
+       orientation="1,0"
+       id="guide4016"
+       inkscape:locked="false"
+       inkscape:label="links"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="490.92093,1500.5327"
+       orientation="0,1"
+       id="guide4018"
+       inkscape:locked="false"
+       inkscape:label="oben"
+       inkscape:color="rgb(255,0,29)" />
+    <sodipodi:guide
+       position="1500.4538,1055.9913"
+       orientation="1,0"
+       id="guide4020"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="759.39332,0"
+       orientation="0,1"
+       id="guide4022"
+       inkscape:locked="false"
+       inkscape:label="unten"
+       inkscape:color="rgb(255,0,66)" />
+  </sodipodi:namedview>
+  <g
+     id="g864"
+     transform="matrix(1.3176106,-0.15415346,-0.15413928,1.3571821,-383.19695,87.018103)"
+     style="opacity:0.93000034">
+    <path
+       sodipodi:nodetypes="csccsc"
+       inkscape:connector-curvature="0"
+       id="path4623"
+       d="m 427.23557,1073.1087 c -2.1592,-3.5592 -2.89658,-10.7732 -1.47942,-15.0561 47.91809,-144.81738 45.42057,-133.79816 68.24716,-187.53876 2.73762,1.76621 97.12276,36.73728 132.16663,131.21916 -81.08687,30.2578 -130.19787,55.3144 -181.61965,71.0998 -6.44341,1.9779 -15.65202,3.8173 -17.31472,0.2759 z"
+       style="fill:#303c42;fill-opacity:1;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4625"
+       d="m 516.34166,846.67331 c 82.71491,41.25152 106.71969,84.99651 135.74506,134.9752 L 1255.2685,375.02983 c -28.92,-45.19179 -96.846,-107.33318 -135.2232,-126.94702 z"
+       style="fill:#16a582;fill-opacity:1;fill-rule:evenodd;stroke:#16a582;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4627"
+       d="m 1147.6883,223.14535 24.3344,-26.18149 c 55.5004,35.73981 96.1831,73.01589 133.8397,125.9205 l -27.3763,30.54507 c -4.37,-19.11714 -89.5505,-102.97434 -130.7978,-130.28408 z"
+       style="fill:#878787;fill-opacity:1;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path4629"
+       d="m 1197.8781,171.09405 c 65.2956,49.08114 86.793,71.7913 134.7522,129.66071 l 61.7487,-66.38878 c 8.7617,-15.46901 6.5177,-22.26989 -0.6083,-34.59696 l -93.992,-91.01184 c -4.682,-5.57363 -23.2065,-10.99506 -34.9808,-1.87011 z"
+       style="fill:#eb431c;fill-opacity:1;fill-rule:evenodd;stroke:#eb431c;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path851"
+       d="m 646.27689,969.69783 c -10.27324,-19.99728 -33.84301,-52.15377 -50.26127,-68.57204 -17.26383,-17.26384 -49.77937,-40.84551 -68.59753,-49.7499 l -9.21537,-4.36052 170.2988,-168.99751 C 782.16585,585.06925 917.64887,450.42946 989.5749,378.81834 l 130.7746,-130.20203 17.8468,11.9739 c 33.697,22.60824 77.8243,64.49205 104.6469,99.32645 l 11.3473,14.73672 -299.94222,301.67714 c -164.96819,165.92245 -300.7882,301.67717 -301.82225,301.67717 -1.03405,0 -3.80116,-3.73943 -6.14914,-8.30986 z"
+       style="fill:#303c42;fill-opacity:1;stroke-width:2.55687976" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path853"
+       d="m 1265.3442,331.99491 c -15.3648,-20.10236 -74.2166,-77.36951 -98.6948,-96.03734 l -17.574,-13.40247 11.9201,-12.10208 11.9201,-12.10208 16.8102,11.88754 c 40.7091,28.78798 76.7179,62.6356 102.8673,96.69336 l 11.8596,15.44636 -11.4746,13.31854 c -6.311,7.32519 -12.2339,13.25237 -13.162,13.1715 -0.9281,-0.0809 -7.4405,-7.67386 -14.4719,-16.87333 z"
+       style="fill:#303c42;fill-opacity:1;stroke-width:2.55687976" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path855"
+       d="m 1306.2543,268.19115 c -25.0017,-28.96379 -58.0884,-59.96446 -90.1519,-84.468 l -16.0024,-12.22931 16.0024,-16.3309 c 8.8013,-8.98199 25.0765,-24.40021 36.1671,-34.26271 19.5081,-17.34782 20.5245,-17.89127 31.208,-16.68708 10.2921,1.16007 14.4368,4.50941 60.941,49.24708 54.1897,52.13111 58.3503,58.02932 51.6678,73.24476 -3.221,7.33406 -57.7574,68.797 -62.5555,70.5006 -0.9392,0.3335 -13.2137,-12.723 -27.2765,-29.01444 z"
+       style="fill:#303c42;fill-opacity:1;stroke-width:2.55687976" />
+  </g>
+</svg>
+</div>
+      <h2>Test First</h2>
+      <p> Write test specifications <em>before</em> the actual feature is implemented. 
+        Make your tests an integral element of your agile feature development.
+      </p>
+    </div>
+    <div class="span4">
+      <div class="icons"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.23 16.23l-1.46-1.46-4.176-1.856a1 1 0 0 1-.517-1.299l.833-2A1 1 0 0 1 4.833 9H9.36c2.814-3.637 7.558-6.528 11.644-6.948a.855.855 0 0 1 .945.945c-.42 4.086-3.311 8.83-6.948 11.644V19a1 1 0 0 1-.553.894l-2 1a1 1 0 0 1-1.36-.488L9.23 16.23zm6.125-9.608a9.24 9.24 0 0 1 1.387-1.04.46.46 0 0 1 .442-.01l.18.09a2 2 0 0 1 .894.894l.09.18a.472.472 0 0 1-.006.444 9.725 9.725 0 0 1-1.038 1.444.469.469 0 0 1-.697.008L15.34 7.313a.48.48 0 0 1 .015-.69zm-9.523 9.933a1 1 0 1 0-1.664-1.11c-.623.934-.9 2.109-1.031 2.965A12.318 12.318 0 0 0 3 19.96V20c0 .552.449 1 1 1h.043a6.92 6.92 0 0 0 .433-.017c.28-.017.671-.051 1.115-.12.856-.131 2.031-.408 2.965-1.031a1 1 0 1 0-1.11-1.664c-.566.378-1.391.6-2.16.719a9.59 9.59 0 0 1-.2.028l.005-.037.007-.053.016-.11c.119-.768.342-1.594.719-2.16z" style="fill:#303c42;fill-opacity:1" ></path></svg></div>
+      <h2>Test <em>Your</em> Domain</h2>
+      <p> Use a language designed to enable <em>domain experts</em> to write tests. Define the vocabulary and abstractions of your tests
+          yourself and specify readable, comprehensible, and reusable tests.
+      </p>
+    </div>
+    <div class="span4">
+       <div class="icons"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4zm2 .51A.51.51 0 0 1 7.51 4h8.98a.51.51 0 0 1 .51.51v13.98a.51.51 0 0 1-.51.51H7.51a.51.51 0 0 1-.51-.51V4.51zM10.5 20a.5.5 0 1 0 0 1h3a.5.5 0 1 0 0-1h-3z" style="fill:#303c42;fill-opacity:1" ></path></svg></div>
+      <h2>Test <em>Your</em> Application</h2>
+      <p> Test different technologies, from web applications up to mainframe applications.
+          Use the Test-Editor-Web to test your application, <em>regardless of technology</em>.
+      </p>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span4">
+      <div class="get-button">
+          <a class="web-button-grey" href="/te_markdown/all#test-first">Learn More ...</a> 
+      </div>
+    </div>
+    <div class="span4">
+        <div class="get-button">
+            <a class="web-button-grey" href="/te_markdown/all#test-your-domain">Learn More ...</a>
+          </div>  
+    </div>
+    <div class="span4">
+        <div class="get-button">
+              <a class="web-button-grey" href="/te_markdown/all#test-application">Learn More ...</a>
+          </div>
+    </div>
+  </div>
+    <hr>
+    <div class="row-fluid">
+        <div class="span4">
+          <div class="icons"><?xml version="1.0" ?><svg    width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><g id="Docker"><path d="M23.77,11.08a5.12,5.12,0,0,0-2.41-.77,2.7,2.7,0,0,0-.44,0,4.24,4.24,0,0,0-1.64-2.26.5.5,0,0,0-.64.07,4.06,4.06,0,0,0-.72,3.28.52.52,0,0,1-.13.41.45.45,0,0,1-.34.15H17V9.5a.5.5,0,0,0-.5-.5H14V3.5a.5.5,0,0,0-.5-.5h-3a.5.5,0,0,0-.5.5V6H4.5a.5.5,0,0,0-.5.5V9H1.5a.5.5,0,0,0-.5.5V12H.5a.5.5,0,0,0-.5.5C0,20.17,5.59,21,8,21a14.29,14.29,0,0,0,12.38-7.08,5.13,5.13,0,0,0,3.55-2.17A.5.5,0,0,0,23.77,11.08ZM16,12H14V10h2ZM5,12V10H7v2Zm3,0V10h2v2Zm5-5V9H11V7Zm-2,5V10h2v2Zm0-8h2V6H11ZM10,9H8V7h2ZM5,7H7V9H5ZM2,10H4v2H2Zm3,7a1,1,0,1,1,1-1A1,1,0,0,1,5,17Z" style="fill:#303c42;fill-opacity:1" /></g></svg></div>
+          <h2>Test Containerized</h2>
+          <p>Have automated test executions that run locally exactly as they run in the cloud.</p>
+        </div>
+        <div class="span4">
+          <div class="icons"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.062 11a8.009 8.009 0 0 1 5.14-6.497c-.05.137-.1.28-.15.43C8.577 6.356 8.113 8.379 8.017 11H4.062zm6.887-5.434c.234-.702.465-1.22.632-1.555a8.138 8.138 0 0 1 .838 0c.167.335.398.853.632 1.555.412 1.237.835 3.047.93 5.434H10.02c.094-2.387.517-4.197.929-5.434zM13.98 13h-3.96c.094 2.387.517 4.197.929 5.434.234.701.465 1.22.632 1.555a8.07 8.07 0 0 0 .838 0c.167-.335.398-.854.632-1.555.412-1.237.835-3.047.93-5.434zm.819 6.497c.05-.137.1-.28.15-.43.473-1.422.937-3.444 1.033-6.067h3.956a8.009 8.009 0 0 1-5.14 6.497zM15.982 11c-.096-2.622-.56-4.645-1.033-6.066-.05-.15-.1-.294-.15-.43A8.009 8.009 0 0 1 19.939 11h-3.957zm-11.92 2h3.956c.096 2.623.56 4.645 1.033 6.066a15.91 15.91 0 0 0 .15.43A8.009 8.009 0 0 1 4.062 13zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z" style="fill:#303c42;fill-opacity:1" ></path></svg></div>
+          <h2>Test in Your Browser</h2>
+          <p> Make use of a feature-rich editor that <em>lives in the browser</em>.
+              Specify and run your tests without the need for locally installed fat clients.
+          </p>
+        </div>
+        <div class="span4">
+          <div class="icons"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="30"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="continuosly.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8.4067797"
+     inkscape:cy="8"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <g
+     id="g834"
+     transform="translate(0.47457627,-4)">
+    <path
+       style="fill:#303c42;fill-opacity:1" 
+       id="path2"
+       d="m 0,11 a 1,1 0 0 0 2,0 5,5 0 0 1 9.584,-2 H 8.996 a 1,1 0 0 0 0,2 H 14 a 1,1 0 0 0 1,-1 V 5 A 1,1 0 1 0 13,5 V 7.392 A 7,7 0 0 0 0,11 Z"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#303c42;fill-opacity:1"
+       id="path2-6"
+       d="m 15,12.997551 a 1,1 0 0 0 -2,0 5,5 0 0 1 -9.5840004,2 h 2.588 a 1.0000002,1.0000002 0 0 0 0,-2 H 0.99999957 a 1,1 0 0 0 -0.99999999855323,1 v 5 a 1,1 0 1 0 2.00000002855323,0 v -2.392 A 7,7 0 0 0 15,12.997551 Z"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
+</div>
+          <h2>Test Continuously</h2>
+          <p>Seamlessly integrate your tests into existing CI pipelines without any hassle.</p>
+        </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="get-button">
+          <a class="web-button-grey" href="/te_markdown/all#test-containerized">Learn More ...</a> 
+        </div>
+      </div>
+      <div class="span4">
+        <div class="get-button">
+          <a class="web-button-grey" href="/te_markdown/all#test-browser">Learn More ...</a>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="get-button">
+          <a class="web-button-grey" href="/te_markdown/all#test-continuously">Learn More ...</a>
+        </div>
+      </div>
+  </div>
+    <hr>
+
+
+  <h1 id="overview">Overview</h1>
+<p>Here you can find a brief <a href="/te_markdown/terminology/">overview</a> of the Test-Editor-Web.</p>
+
+<h1 id="getting-started">Getting started</h1>
+<ul>
+  <li><a href="/te_markdown/local-setup/">Installation and Setup</a></li>
+  <li><a href="/te_markdown/heroes-create-spec/">Writing a Test Specification in 5 minutes</a></li>
+  <li><a href="/te_markdown/heroes-create-testcase/">Writing a Test Case in 8 minutes</a></li>
+  <li><a href="/te_markdown/heroes-create-aml">Writing an Application Mapping in 8 minutes</a></li>
+  <li><a href="/te_markdown/heroes-create-testcase-execution">Test Execution and Reports</a></li>
+  <li><a href="/te_markdown/developer-quick-start">Developer quick start</a></li>
+</ul>
+
+<hr />
+<div class="icon_newsfeed"><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     id="RSSicon"
+     viewBox="0 0 8 8" width="25" height="25">
+
+  <title>RSS feed icon</title>
+
+  <style type="text/css">
+    .button {stroke: none; fill: orange;}
+    .symbol {stroke: none; fill: white;}
+  </style>
+
+  <rect   class="button" width="8" height="8" rx="1.5" />
+  <circle class="symbol" cx="2" cy="6" r="1" />
+  <path   class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z" />
+  <path   class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z" />
+
+</svg></div> 
+   
+    <h2 class="post-list-heading">News</h2>
+    <ul class="post-list"><li><span class="post-meta">Nov 13, 2018</span>
+        <h3>
+          <a class="post-link" href="/te/update/2018/11/13/new-test-editor-web-version.html">
+              <img src="/images/logo.svg?sanitize=true"> New Test-Editor-Web Version 1.1.6 released!
+          </a>
+        </h3></li></ul>
+
+    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Test-Editor-Web</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Test-Editor-Web</li><li>
+            <div class="icon_mail"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg866"
+   width="20"
+   height="20"
+   viewBox="0 0 303 301"
+   sodipodi:docname="mail_thick.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata872">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs870" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     id="namedview868"
+     showgrid="false"
+     inkscape:zoom="1.4928528"
+     inkscape:cx="76.524302"
+     inkscape:cy="179.75881"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="35.110571,300"
+       orientation="0,1"
+       id="guide900"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-38.036452,0"
+       orientation="0,1"
+       id="guide902"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="0,116.30377"
+       orientation="1,0"
+       id="guide904"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="300,204.81166"
+       orientation="1,0"
+       id="guide906"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1">
+    <ellipse
+       style="opacity:1;fill:#828282;fill-opacity:0.9958678;stroke:#828282;stroke-width:0.377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98760328"
+       id="path898"
+       ry="149.68617"
+       rx="150.31967"
+       cy="151.0486"
+       cx="151.5972" />
+    <rect
+       style="opacity:1;fill:#ececec;fill-opacity:0;stroke:#ffffff;stroke-width:15.605;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect908"
+       width="195.16982"
+       height="123.5371"
+       x="55.413017"
+       y="89.0093" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10.99272346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 58.517623,95.915868 93.262457,78.667512 95.45686,-80.634199 -2.50587,-4.574143 -8.46618,3.000792 -85.21628,72.76745 L 65.46659,91.589155 61.630512,90.55505 Z"
+       id="path916"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 63.637914,211.02916 74.609966,-55.95747 -6.58324,-4.38883 -76.438633,57.05468 4.388822,5.85176 z"
+       id="path1425"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:10.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 166.40948,155.80316 76.43864,55.59173 7.73471,1.15151 -2.24868,-7.73474 -74.9757,-52.30012 z"
+       id="path1427"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg></div> 
+            <a class="u-email" href="mailto:testeditor.eng@gmail.com">testeditor.eng@gmail.com</a>
+          </li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/test-editor"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">test-editor</span></a></li><li><a href="https://www.twitter.com/testeditor3"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">testeditor</span></a></li>
+</ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>
+            <span style="font-style: italic;">' Write User Acceptance Tests as they were meant to be '</span> 
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

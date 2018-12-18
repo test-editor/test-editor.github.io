@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Overview and Terminology | Test-Editor-Web</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Overview and Terminology" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write User Acceptance Tests as they were meant to be" />
+<meta property="og:description" content="Write User Acceptance Tests as they were meant to be" />
+<link rel="canonical" href="http://localhost:4000/te_markdown/terminology/" />
+<meta property="og:url" content="http://localhost:4000/te_markdown/terminology/" />
+<meta property="og:site_name" content="Test-Editor-Web" />
+<script type="application/ld+json">
+{"headline":"Overview and Terminology","@type":"WebPage","url":"http://localhost:4000/te_markdown/terminology/","description":"Write User Acceptance Tests as they were meant to be","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Test-Editor-Web" /></head><body><header class="site-header" role="banner">
+
+    <div class="wrapper" bla="test"><a class="site-title" rel="author" href="/">Test-Editor-Web</a>
+  
+
+        <nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+  
+          <div class="trigger">
+            <a class="page-link" href="/te_markdown/documentation">Documentation</a>
+            <a class="page-link" href="/te_markdown//tutorials">Tutorials</a> 
+            <a class="page-link" href="/te_markdown/screencasts">Screencasts</a> 
+          </div>
+        </nav>
+
+    </div>
+  </header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Overview and Terminology</h1>
+  </header>
+
+  <div class="post-content">
+    <p>Test-Editor-Web is a lightweight application for specifying, implementing, and executing user acceptance tests, that lives in your browser. This page provides a high-level <a href="#overview">overview</a> of its user interface and its central components. If you would rather like to jump right in and try out Test-Editor-Web for yourself, have a look at one of the <a href="/te_markdown/tutorials">quickstart tutorials</a>. If any questions should arise, you may want to come back here to get your bearings by looking at the overview, or look up individual terms in the <a href="#glossary">glossary</a> further down.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p><img src="/images/te.overview.svg?sanitize=true" alt="Overview" class="img-responsive" /></p>
+
+<p>In the screenshot above you can see the different areas of Test-Editor-Web, indicated in yellow.
+In the following, each area is briefly described.</p>
+
+<p><a name="test-navigator"></a></p>
+<h3 id="1-test-navigator">1. Test Navigator</h3>
+<p>In this area you can specify the structure of the different test artifacts.
+You can create, delete, rename, cut, copy, and paste test artifacts and refresh the workspace.
+In addition you can filter the different test-artifacts, so that just the specific test-artifact is visible which was selected.</p>
+
+<p><a name="editor-area"></a></p>
+<h3 id="2-editor-area">2. Editor Area</h3>
+<p>This area is the place to write different test artifacts. The editor supports you with a content completion of the different possibilities during typing and saving your test case, e.g. through the shortcut <code class="highlighter-rouge">CTRL + S</code>.</p>
+
+<p><a name="test-step-selector"></a></p>
+<h3 id="3-test-step-selector">3. Test Step Selector</h3>
+<p>The Test Step Selector provides you with an overview of the test steps available for defining test cases.</p>
+
+<p><a name="test-execution-navigator"></a></p>
+<h3 id="4-test-execution-navigator">4. Test Execution Navigator</h3>
+<p>Here you can execute the chosen test case by clicking the start button on the top left corner of this area. After test execution, the results of the individual test steps are indicated by either green (success) or red (failure) icons. In the latter case, details regarding the cause of the failure can be inspected in the <em>Test Execution Details</em>.</p>
+
+<p><a name="test-execution-details"></a></p>
+<h3 id="5-test-execution-details">5. Test Execution Details</h3>
+<p>In this area, details about the test step selected in the <em>Test Execution Navigator</em> are shown. In case of failures during execution, this area offers hints about what went wrong. The general sequence of events during test execution can be traced by accessing <em>logs</em> and inspecting <em>screenshots</em>.</p>
+
+<hr />
+
+<h2 id="glossary">Glossary</h2>
+
+<dl>
+  <dt><a name="application-mapping"></a>Application Mapping</dt>
+  <dd>A set of platform- or application-specific <a href="#test-step">test steps</a>, mapped to concrete actions to be performed for testing, that are implemented in <a href="#test-fixture">test fixtures</a>.</dd>
+  <dt><a name="application-mapping-language"></a>Application Mapping Language (AML)</dt>
+  <dd>A language used by <a href="#tester">testers</a> to define the platform- or application-specific vocabulary for the <a href="#test-step">test steps</a>, and by <a href="#developers">developers</a> to map these steps to the concrete actions to be performed for testing, implemented in <a href="#test-fixture">test fixtures</a>.</dd>
+  <dt><a name="component"></a>Component</dt>
+  <dd>A component is a container for UI elements and interactions. In case of a web application it could be used to describe a  single web page.</dd>
+  <dt><a name="developer"></a>Developer</dt>
+  <dd>A person who is involved in the development of the <a href="#software-under-test">software under test</a>. User acceptance tests described with the <a href="#test-case-language">test case language (TCL)</a> are continuously executed during the development process to check the progress with each development increment, and to validate the implementation.</dd>
+  <dt><a name="domain-expert"></a>Domain Expert</dt>
+  <dd>A user of the <a href="#software-under-test">software under test</a>, or other stakeholder, who has a deep understanding of the problem domain. Domain experts specify what they expect the system to do and how it should behave, using the <a href="#test-specification-language">test specification language (TSL)</a>.</dd>
+  <dt><a name="locator-strategy"></a>Locator Strategy</dt>
+  <dd>Locating elements on the UI is described using locator types (for further information on locating web elements view this <a href="https://www.seleniumhq.org/docs/02_selenium_ide.jsp#locating-elements">Selenium documentation</a>). The <a href="https://github.com/test-editor/web-fixture">web-fixture</a> allows to choose locator types for web applications. Available locator types allow locating by XPATH, name, identifier, link text, CSS (<a href="https://www.w3schools.com/css/default.asp">for further information see W3Schools CSS Tutorial</a>) or XPath (<a href="http://www.w3schools.com/xml/xpath_intro.asp">for further information see W3Schools XPath Tutorial</a>).</dd>
+  <dt><a name="software-under-test"></a>Software Under Test (SUT)</dt>
+  <dd>The software system for which user acceptance tests are created by <a href="#tester">testers</a>. It is (going to be) used by <a href="#domain-expert">domain experts</a>, and implemented and maintained by <a href="#developer">developers</a>.</dd>
+  <dt><a name="specification-step"></a>Specification Step</dt>
+  <dd>A single step taken as part of a task to be performed with the <a href="#software-under-test">software under test</a>. Sequences of specification steps can form <a href="#test-specification">test specifications</a>.</dd>
+  <dt><a name="test-artifact"></a>Test Artifact</dt>
+  <dd>A file used by and / or created with the <a href="#test-editor-web">Test-Editor-Web</a> for the overall purpose of user acceptance testing. In particular, these include files containing <a href="#test-specification">test specifications</a>, <a href="#test-case">test cases</a>, and <a href="#application-mapping">application mappings</a> <a href="#test-case-language">test case language (TCL)</a>.</dd>
+  <dt><a name="test-case"></a>Test Case</dt>
+  <dd>A user acceptance test defined in terms of a sequence of <a href="#test-step">test steps</a> to be executed, and expressed using the <a href="#test-case-language">test case language (TCL)</a>.</dd>
+  <dt><a name="test-case-language"></a>Test Case Language (TCL)</dt>
+  <dd>A language used by <a href="#tester">testers</a> to implement <a href="#test-case">test cases</a> conforming to <a href="#test-specification">test specifications</a>, by defining the necessary, concrete <a href="#test-step">test steps</a> for automatic execution. See <a href="/te_markdown/heroes-create-testcase/">this tutorial</a> to learn about writing test cases with TCL.</dd>
+  <dt><a name="test-editor-web"></a>Test-Editor-Web</dt>
+  <dd>An application dedicated to automate the tip of the testing pyramid—acceptance testing—to enable automated product releases and provide confidence in reliable product operation. Designed to bridge the gap between <a href="#domain-expert">domain experts</a>, <a href="#tester">testers</a>, and <a href="#developer">developers</a>, Test-Editor-Web is a modern application that integrates well with container technologies. See <a href="#overview">Overview</a> for a description of its user interface components and functions, and <a href="/te_markdown/tutorials">Tutorials</a> to learn about using it.</dd>
+  <dt><a name="test-fixture"></a>Test Fixture</dt>
+  <dd>A software library that implements concrete actions, specific to the platform and technology stack of a given <a href="#software-under-test">software under test</a>, to be performed during test execution. <a href="#developer">Developers</a> use <a href="#application-mapping">application mappings</a> to bind <a href="#test-step">test-steps</a> to fixture logic. Out of the box, <a href="#test-editor-web">Test-Editor-Web</a> comes with fixtures that enable the testing of <em>web</em> applications, in particular <em>Angular</em> applications, <em>REST</em> services, <em>Java Swing</em> applications, and mainframe applications through <em>3270 terminal emulation</em>.</dd>
+  <dt><a name="test-specification"></a>Test Specification</dt>
+  <dd>A usage scenario describing an interaction with the <a href="#software-under-test">software under test</a>, written by <a href="#domain-expert">domain experts</a> to express desired system behaviors in a testable manner.</dd>
+  <dt><a name="test-specification-language"></a>Test Specification Language (TSL)</dt>
+  <dd>A language used by <a href="#domain-expert">domain experts</a> to write <a href="#test-specification">test specifications</a> of desired system behaviors. <a href="#tester">Testers</a> refer to TSL <a href="test-artifact">artifacts</a> when implementing them as <a href="#test-case">test cases</a>, using the <a href="#test-case-language">test case language</a>. See <a href="/te_markdown/heroes-create-spec/">this tutorial</a> to learn about writing test specifications with TSL.</dd>
+  <dt><a name="test-step"></a>Test Step</dt>
+  <dd>A single, automatable step taken as part of a test executed against the <a href="#software-under-test">software under test</a>. In <a href="#test-case">test cases</a> conforming to <a href="#test-specification">test specifications</a>, each <a href="#specification-step">specification step</a> may be implemented by arbitrarily many test steps.</dd>
+  <dt><a name="tester"></a>Tester</dt>
+  <dd>A person responsible for user acceptance testing against the <a href="#software-under-test">software under test</a>. Testers write executable <a href="#test-case">test cases</a> using the <a href="#test-case-language">test case language</a> to implement <a href="#test-specification">test specifications</a>.</dd>
+</dl>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Test-Editor-Web</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Test-Editor-Web</li><li>
+            <div class="icon_mail"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg866"
+   width="20"
+   height="20"
+   viewBox="0 0 303 301"
+   sodipodi:docname="mail_thick.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata872">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs870" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     id="namedview868"
+     showgrid="false"
+     inkscape:zoom="1.4928528"
+     inkscape:cx="76.524302"
+     inkscape:cy="179.75881"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="35.110571,300"
+       orientation="0,1"
+       id="guide900"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-38.036452,0"
+       orientation="0,1"
+       id="guide902"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="0,116.30377"
+       orientation="1,0"
+       id="guide904"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="300,204.81166"
+       orientation="1,0"
+       id="guide906"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1">
+    <ellipse
+       style="opacity:1;fill:#828282;fill-opacity:0.9958678;stroke:#828282;stroke-width:0.377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.98760328"
+       id="path898"
+       ry="149.68617"
+       rx="150.31967"
+       cy="151.0486"
+       cx="151.5972" />
+    <rect
+       style="opacity:1;fill:#ececec;fill-opacity:0;stroke:#ffffff;stroke-width:15.605;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect908"
+       width="195.16982"
+       height="123.5371"
+       x="55.413017"
+       y="89.0093" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10.99272346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 58.517623,95.915868 93.262457,78.667512 95.45686,-80.634199 -2.50587,-4.574143 -8.46618,3.000792 -85.21628,72.76745 L 65.46659,91.589155 61.630512,90.55505 Z"
+       id="path916"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 63.637914,211.02916 74.609966,-55.95747 -6.58324,-4.38883 -76.438633,57.05468 4.388822,5.85176 z"
+       id="path1425"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:10.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 166.40948,155.80316 76.43864,55.59173 7.73471,1.15151 -2.24868,-7.73474 -74.9757,-52.30012 z"
+       id="path1427"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg></div> 
+            <a class="u-email" href="mailto:testeditor.eng@gmail.com">testeditor.eng@gmail.com</a>
+          </li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/test-editor"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">test-editor</span></a></li><li><a href="https://www.twitter.com/testeditor3"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">testeditor</span></a></li>
+</ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>
+            <span style="font-style: italic;">' Write User Acceptance Tests as they were meant to be '</span> 
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
