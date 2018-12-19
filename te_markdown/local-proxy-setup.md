@@ -31,7 +31,7 @@ In our above example this would be :
 
 
 ### Setup under Linux
-Just export the enviromment variable with the linux command on a terminal.
+Just export the enviromment variable with the Linux command on a terminal.
 Open a shell in the respective folder and use the following commands:
 
 ```
