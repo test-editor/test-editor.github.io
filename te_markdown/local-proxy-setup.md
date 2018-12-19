@@ -8,7 +8,7 @@ Estimated reading time: 3 minutes
 
 
 ## Setup environment variable
-The **Test-Editor-Web** can be used behind a proxy server. Therefore you need an environment variable named `http_proxy` which look like this:
+**Test-Editor-Web** can be used behind a proxy server. You'll need an environment variable named `http_proxy` which look like this:
 
 ```
 http_proxy=http://myUsername:myPassword@proxy.server.address:80
