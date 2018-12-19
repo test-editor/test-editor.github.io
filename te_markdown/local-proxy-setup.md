@@ -43,7 +43,7 @@ bash export http_proxy=http://myUsername:myPassword@proxy.server.address:80
 If you have succesfully set up the environment variable, nothing else has to be done.   
 After this step you can start a fresh, clean version of the first tutorial (e.g. creating a test specification).
 
-You want to know more about how to install the Test-Editor-Web, getting started to write specifications? [read more](/te_markdown/local-setup){:class="web-button-grey reduced-padding"}
+You want to know more about how to install **Test-Editor-Web**, to get started with writing specifications? [read more](/te_markdown/local-setup){:class="web-button-grey reduced-padding"}.
 
 If you want to know more about how specifications can and should be written [read more](/te_markdown/test-specifications){:class="web-button-grey reduced-padding"}
 
