@@ -45,6 +45,6 @@ After this step you can start a fresh, clean version of the first tutorial (e.g.
 
 You want to know more about how to install **Test-Editor-Web**, to get started with writing specifications? [read more](/te_markdown/local-setup){:class="web-button-grey reduced-padding"}.
 
-If you want to know more about how specifications can and should be written [read more](/te_markdown/test-specifications){:class="web-button-grey reduced-padding"}
+If you want to know more about how specifications can and should be written, [read more](/te_markdown/test-specifications){:class="web-button-grey reduced-padding"}.
 
 You can find all tutorials and a brief desription [here](https://github.com/test-editor/tutorials )
