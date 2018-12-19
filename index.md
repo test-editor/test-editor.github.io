@@ -15,5 +15,6 @@ Here you can find a brief [overview](/te_markdown/terminology/) of the Test-Edit
 * [Writing an Application Mapping in 8 minutes](/te_markdown/heroes-create-aml)
 * [Test Execution and Reports](/te_markdown/heroes-create-testcase-execution) 
 * [Developer quick start](/te_markdown/developer-quick-start)
+* [Local Proxy Setup](/te_markdown/local-proxy-setup)
 
 ----
