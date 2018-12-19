@@ -47,4 +47,4 @@ You want to know more about how to install **Test-Editor-Web**, to get started w
 
 If you want to know more about how specifications can and should be written, [read more](/te_markdown/test-specifications){:class="web-button-grey reduced-padding"}.
 
-You can find all tutorials and a brief desription [here](https://github.com/test-editor/tutorials )
+You can find all tutorials and a brief desription [here](https://github.com/test-editor/tutorials ).
