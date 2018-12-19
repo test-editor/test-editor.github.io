@@ -26,7 +26,7 @@ In our above example this would be :
 3. proxy.server.address
 4. 80
 
-:warning: Keep in mind, that your username, password and proxy server url should not contain following characters
+:warning: Keep in mind, that your username, password and proxy server url should not contain the following characters
 `:` or  `@` or `"` or `'` or `//` :warning:
 
 
