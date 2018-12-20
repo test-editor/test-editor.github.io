@@ -24,8 +24,7 @@ Given you have a running instance of the test-editor-web, the following (trivial
 
 - navigate to (or create) the folder to hold the specification
 - create a new file with the extension '.tsl' (e.g. CreateHero.tsl) in a directory (e.g. org/testeditor/heroes) by means of the create button in the upper left corner of the [Test-Navigator](/te_markdown/terminology#test-navigator)
- - hit the `RETURN` button on your keyboard to create the file.
-- Write the specification name into the opened editor, prefixing it with '#' (e.g. '# CreateHero') 
+- hit the `RETURN` button on your keyboard to create the file.
 - Write each aspect of the specification (specification steps):
 
 ```
