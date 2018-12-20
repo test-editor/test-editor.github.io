@@ -23,13 +23,12 @@ Given you have a running instance of the test-editor-web (see [here](/te_markdow
 
 ![screencase: create test case file](/images/tutorial/tutorial.heroes.create.testcase.1.create-file.gif "screencast: create test case file")
 
-- Write the test case name into the opened editor, prefixing it with '#' (e.g. '# CreateHero')
-- State that this test case implements the `CreateHero` specification ('implements CreateHero' in the same line)
+- Into the new opened editor, state that this test case implements the `CreateHero` specification ('implements CreateHero' in first line)
 - Notice the yellow warning icon on the left of the editor in the first line, it indicates that your mentioned specification is not implemented yet.
 
 ![screencase: name test case](/images/tutorial/tutorial.heroes.create.testcase.2.enter-name.gif "screencast: name test case")
 
-- Copy the specification steps of the test specification (all three lines starting with '*') and the warning will dissapear.
+- Copy the specification steps of the test specification (all three lines starting with '*' out of CreateHero.tsl file) and the warning will dissapear.
 
 ![screencase: copy specification](/images/tutorial/tutorial.heroes.create.testcase.3.copy-tsl.gif "screencast: copy specification")
 
@@ -41,6 +40,9 @@ Given you have a running instance of the test-editor-web (see [here](/te_markdow
         - Start <Firefox>
         - Browse "http://sut:4200/heroes"
 ```
+
+
+:bulb: _Hint_ : _With the Keyboard shortcut_ `CTRL  + SPACE` _you can get content assist, as shown in the screencast, to choose a step from a list of proposals_ :bulb:
 
 ![screencase: enter given](/images/tutorial/tutorial.heroes.create.testcase.4.enter-given.gif "screencast: enter given")
 
@@ -64,14 +66,17 @@ Given you have a running instance of the test-editor-web (see [here](/te_markdow
         - assert actualName = "21 Sancho"
 ```
 
+![screencase: enter then](/images/tutorial/tutorial.heroes.create.testcase.6.enter-then.gif "screencast: enter then")
+
   - and finally do some cleanup (closing the browser)
+ 
 ```
         Component: org.testeditor.fixture.web.WebBrowser
         - Close browser
 ```
 
 
-![screencase: enter then](/images/tutorial/tutorial.heroes.create.testcase.6.enter-then.gif "screencast: enter then")
+![screencase: close](/images/tutorial/tutorial.heroes.create.testcase.7.close-browser.gif "screencast: close")
 
 That's it. Your first test in place. 
 
