@@ -4,7 +4,7 @@ layout: page
 
 # Download
 
-Installing and setting up the **Test-Editor-Web** (locally) [read more](/te_markdown/local-setup){:class="web-button-grey reduced-padding"}
+Installing and setting up the **Test-Editor** (locally) [read more](/te_markdown/local-setup){:class="web-button-grey reduced-padding"}
 
 You can find the source code for Test-Editor Web at GitHub:
 *  Test-Editor on ![GitHub](/images/github_icon.svg?sanitize=true){:class="img-responsive"} [GitHub ][test-editor-organization]

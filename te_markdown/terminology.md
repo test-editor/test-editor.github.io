@@ -4,7 +4,7 @@ title: Overview and Terminology
 permalink: /te_markdown/terminology/
 ---
 
-Test-Editor-Web is a lightweight application for specifying, implementing, and executing user acceptance tests, that lives in your browser. This page provides a high-level [overview](#overview) of its user interface and its central components. If you would rather like to jump right in and try out Test-Editor-Web for yourself, have a look at one of the [quickstart tutorials](/te_markdown/tutorials). If any questions should arise, you may want to come back here to get your bearings by looking at the overview, or look up individual terms in the [glossary](#glossary) further down.
+Test-Editor is a lightweight application for specifying, implementing, and executing user acceptance tests, that lives in your browser. This page provides a high-level [overview](#overview) of its user interface and its central components. If you would rather like to jump right in and try out Test-Editor for yourself, have a look at one of the [quickstart tutorials](/te_markdown/tutorials). If any questions should arise, you may want to come back here to get your bearings by looking at the overview, or look up individual terms in the [glossary](#glossary) further down.
 
 ## Overview
 
@@ -73,8 +73,8 @@ In this area, details about the test step selected in the _Test Execution Naviga
 <a name="test-case-language"></a>Test Case Language (TCL)
 : A language used by [testers](#tester) to implement [test cases](#test-case) conforming to [test specifications](#test-specification), by defining the necessary, concrete [test steps](#test-step) for automatic execution. See [this tutorial](/te_markdown/heroes-create-testcase/) to learn about writing test cases with TCL.
 
-<a name="test-editor-web"></a>Test-Editor-Web
-: An application dedicated to automate the tip of the testing pyramid—acceptance testing—to enable automated product releases and provide confidence in reliable product operation. Designed to bridge the gap between [domain experts](#domain-expert), [testers](#tester), and [developers](#developer), Test-Editor-Web is a modern application that integrates well with container technologies. See [Overview](#overview) for a description of its user interface components and functions, and [Tutorials](/te_markdown/tutorials) to learn about using it.
+<a name="test-editor-web"></a>Test-Editor
+: An application dedicated to automate the tip of the testing pyramid—acceptance testing—to enable automated product releases and provide confidence in reliable product operation. Designed to bridge the gap between [domain experts](#domain-expert), [testers](#tester), and [developers](#developer), Test-Editor is a modern application that integrates well with container technologies. See [Overview](#overview) for a description of its user interface components and functions, and [Tutorials](/te_markdown/tutorials) to learn about using it.
 
 <a name="test-fixture"></a>Test Fixture
 : A software library that implements concrete actions, specific to the platform and technology stack of a given [software under test](#software-under-test), to be performed during test execution. [Developers](#developer) use [application mappings](#application-mapping) to bind [test-steps](#test-step) to fixture logic. Out of the box, [Test-Editor-Web](#test-editor-web) comes with fixtures that enable the testing of _web_ applications, in particular _Angular_ applications, _REST_ services, _Java Swing_ applications, and mainframe applications through _3270 terminal emulation_.

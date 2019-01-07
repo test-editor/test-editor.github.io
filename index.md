@@ -6,7 +6,7 @@ layout: home
 ---
 
 # Overview
-Here you can find a brief [overview](/te_markdown/terminology/) of the Test-Editor-Web. 
+Here you can find a brief [overview](/te_markdown/terminology/) of the Test-Editor. 
   
 # Getting started  
 * [Installation and Setup](/te_markdown/local-setup/)
