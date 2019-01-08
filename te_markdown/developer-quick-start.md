@@ -6,8 +6,8 @@ permalink: /te_markdown/developer-quick-start/
 
 Estimated reading time: 5 minutes
 
-The **Test-Editor** is basically composed of three projects (all open source, all hosted on github.com)
-1. [Test-Editor](https://github.com/test-editor/test-editor-web), the UI project
+The **Test-Editor* is basically composed of three projects (all open source, all hosted on github.com)
+1. [Test-Editor-Web](https://github.com/test-editor/test-editor-web), the UI project
 2. [Test-Editor-Backend](https://github.com/test-editor/test-editor-backend), the dropwizard java backends providing `REST` services for the UI
 3. [Test-Editor-Xtext-Gradle](https://github.com/test-editor/test-editor-xtext-gradle), the xtext language running under the hood
 
@@ -21,7 +21,7 @@ nix-shell                                 # setup build environment (takes a bit
 ./gradlew build
 ```
 
-## Test-Editor (UI project)
+## Test-Editor-Web (UI project)
  
 To locally setup the development environment, follow the setup section within the readme of the project [here](https://github.com/test-editor/test-editor-web#setup-development). 
 Don't worry, it is setup in no time with just a couple of shell commands.
@@ -37,7 +37,7 @@ Technologies: angular 5, typescript
 
 Supporting Technologies: nix, git, yarn, ng-packagr
 
-## Test-editor-backend (REST services)
+## Test-Editor-Backend (REST services)
 
 To locally setup the development environment, follow the setup section within the readme of the project [here](https://github.com/test-editor/test-editor-backend#setup-development).
 Don't worry, it is setup in no time with just a couple of shell commands.
@@ -53,7 +53,7 @@ Technologies: java 10, xtend, dropwizard
 
 Supporting Technologies: nix, git, gradle
 
-## Test-editor-xtext-gradle (Languages)
+## Test-Editor-Xtext-Gradle (Languages)
 
 To locally setup the development environment, follow the setup section within the readme of the project [here](https://github.com/test-editor/test-editor-xtext-gradle#setup-development).
 Don't worry, it is setup in no time with just a couple of shell commands.
