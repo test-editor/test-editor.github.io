@@ -18,9 +18,9 @@ The software under test that is used for this example is an implementation of th
 
 You want to know more about the software that is tested here? [read more](/te_markdown/sut-heroes){:class="web-button-grey reduced-padding"}
 
-You want to know more about how to install the Test-Editor-Web, getting started to write specifications? [read more](/te_markdown/local-setup){:class="web-button-grey reduced-padding"}
+You want to know more about how to install the Test-Editor, getting started to write specifications? [read more](/te_markdown/local-setup){:class="web-button-grey reduced-padding"}
 
-Given you have a running instance of the test-editor-web, the following (trivial) steps suffice:
+Given you have a running instance of the Test-Editor, the following (trivial) steps suffice:
 
 - navigate to (or create) the folder to hold the specification
 - create a new file with the extension '.tsl' (e.g. CreateHero.tsl) in a directory (e.g. org/testeditor/heroes) by means of the create button in the upper left corner of the [Test-Navigator](/te_markdown/terminology#test-navigator)
@@ -57,6 +57,6 @@ It is quite common to have the specification change (slightly) when actually imp
 remain the guiding principle for the tests.
 
 The domain expert can write down specifications without having to think about the tooling itself. Writing specifications requires
-minimal knowledge about the test-editor-web itself and the language to be used to describe specifications.
+minimal knowledge about the Test-Editor itself and the language to be used to describe specifications.
 
 Specifications contain specification steps. Specification steps start a line with '*'. They can be multiline and hold UTF-8 characters. Implementations of a specification must make sure to implement each specification step. 

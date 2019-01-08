@@ -17,7 +17,7 @@ You want to know more about the software that is tested here? [read more](/te_ma
 
 The test specification that is implemented in this example is described in detail in this [tutorial](/te_markdown/heroes-create-spec).
 
-Given you have a running instance of the test-editor-web (see [here](/te_markdown/local-setup)), the following steps are necessary to implement the test specification.
+Given you have a running instance of the Test-Editor (see [here](/te_markdown/local-setup)), the following steps are necessary to implement the test specification.
 - navigate to (or create) the folder to hold the test case
  - create a new file with the extension '.tcl' (e.g. CreateHero.tcl) by clicking the new file button on the left corner of the [Test-Navigator](/te_markdown/terminology#test-navigator). Hit the  ```RETURN``` key on your keyboard to create the file.
 
