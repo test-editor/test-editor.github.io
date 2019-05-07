@@ -23,12 +23,13 @@ E-Mail: info(at)akquinet.de
 Webseite: www.akquinet.de
 ```
 
-### Vertretungsberechtigter Vorstand
+### Vertreten durch
 ```
-Dirk Aagaard (Vorstand)
-Klaus-Dieter Gerken (Vorstand)
-Thomas Tauer (Vorstand)
-Till Vieregge (Vorstand)  
+Olaf Lange
+Thomas Muszal
+Thomas Tauer
+Till Vieregge
+Michael Wienke  
 ```
 ### Registergericht
 ```
