@@ -83,14 +83,12 @@ E-Mail: klaus.lamprecht(at)signal-iduna.de
 ### Vorstand
 ```
 Ulrich Leitermann (Vorsitzender)
-Dr. Christian Bielefeld
+Dr. jur. Christian Bielefeld
 Martin Berger
 Dr. Karl-Josef Bierth
 Michael Johnigk
 Dr. Stefan Kutz
 Clemens Vatter
-Prof. Dr. Markus Warg 
-Vorsitzender des Aufsichtsrats: Reinhold Schulte
 ```
 ### Aufsichtsbehörde
 ```
