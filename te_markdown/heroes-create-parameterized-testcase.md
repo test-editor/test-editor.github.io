@@ -33,7 +33,7 @@ As can be seen, the specification remains almost the same – we have only remov
 
 Next, we create the test case corresponding to this specification as a new file `CreateHero_parameterized.tcl`. You can follow the same steps as described in the [tutorial on which this one is based on](/te_markdown/heroes-create-testcase). Alternatively, you could create the file by copying the `CreateHero.tcl` file, in the same manner as we did with the specification file. In that case, you will have to adapt the *implements* statement in the first line, as well as the specification steps.
 
-:bulb: Remember that you can leverage the Test-Editor's features like *context assist* and *validation markers* to help you along. For example, remove the old reference to the test specification in the first line and use the former feature by hitting `STRG` + `SPACE` to select the newly created specification from a list. The latter feature will then make a warning marker appear, indicating that the test case does not match the specification. It will guide you to make the necessary changes to the specification steps, disappearing once all of them match those in the test specification exactly. :bulb:
+> :bulb: Remember that you can leverage the Test-Editor's features like *context assist* and *validation markers* to help you along. For example, remove the old reference to the test specification in the first line and use the former feature by hitting `STRG` + `SPACE` to select the newly created specification from a list. The latter feature will then make a warning marker appear, indicating that the test case does not match the specification. It will guide you to make the necessary changes to the specification steps, disappearing once all of them match those in the test specification exactly.
 
 ![screencase: adapt testcase to specification](/images/tutorial/tutorial.heroes.create.parameterized.testcase.1.adapt-to-spec.gif "screencast: adapt testcase to specification")
 
@@ -46,13 +46,13 @@ Now, let's make this a test case a simple, parameterized one. To do so, we first
 
 As shown in the screencast, a data block goes into the preamble of a test case, i.e. before any specification and test steps. Its syntactical elements should be familiar, though: first, you choose a *component*, just like you would when defining test steps. Here, we use the `ParameterizedTesting` component, which gives us access to different sources of data. Next, we have an assignment, introduced with a dash, just like test steps are. We define a variable `heroes` that will contain our test data. Hitting `STRG` + `SPACE` once more, we get a list of available loading steps: we can load data from external files in CSV, JSON, and YAML format.
 
-:bulb: `ParameterizedTesting` is a standard component and part of the Test-Editor. This is extensible, though, and the developer team of your application may choose to provide you with a custom component for loading testing parameters. :bulb:
+> :bulb: `ParameterizedTesting` is a standard component and part of the Test-Editor. This is extensible, though, and the developer team of your application may choose to provide you with a custom component for loading testing parameters.
 
 Probably not suited for larger data sets, but perfect for this initial, simple example, is another loading step that allows us to get our data from a table which we type out right here in our test case file. A pipe symbol (`|`) is used to delimit columns, and each row goes into a separate line. The entire table is a parameter to the data loading step, so it is enclosed in double quotes. You already know this notation for parameters: it works exactly the same as in other test steps, e.g. `Wait "2" seconds`. Only now, the parameter is an entire table that spans multiple lines!
 
 The test data itself, as defined by our table, is structured as follows: we have two columns, the first contains the name of the hero we are going to add, and the second column contains the content of the list entry we expect to see after adding the hero. This is just the hero's name prefixed with its index number in the list. With this data, our test will be executed once for every row in the table. 
 
-:bulb: The test are (and should be) isolated from each other, i.e. each iteration starts the test scenario from scratch. Therefore, we expect every hero to be the 21st in the list -- previous test runs will not have an effect on later ones. :bulb:
+> :bulb: The test are (and should be) isolated from each other, i.e. each iteration starts the test scenario from scratch. Therefore, we expect every hero to be the 21st in the list -- previous test runs will not have an effect on later ones.
 
 
 ### Using the Test Data
@@ -67,7 +67,7 @@ Further down in our test case, we also modify our expectation regarding the last
 
 And that's it! You have created your first parameterized test case with the Test-Editor. Read on to learn how test execution results are presented for parameterized tests, and how to format data in external files to be loaded by the Test-Editor's `ParameterizedTesting` component.
 
-:bulb: If you need to refer to your test data in many places within your test case, you do not have to repeat the name of the data variable every time. Instead, you can define a list of fields in your data block that you want to be able to access directly. Just modify your data block to start with `Data: name, listEntry`. Now, instead of `heroes.name` and `heroes.listEntry`, you can simply write `name` and `listEntry`, respectively. Note that when referring to your test data from within a test step, you will still have to use the `@`-symbol as a prefix. :bulb:
+> :bulb: If you need to refer to your test data in many places within your test case, you do not have to repeat the name of the data variable every time. Instead, you can define a list of fields in your data block that you want to be able to access directly. Just modify your data block to start with `Data: name, listEntry`. Now, instead of `heroes.name` and `heroes.listEntry`, you can simply write `name` and `listEntry`, respectively. Note that when referring to your test data from within a test step, you will still have to use the `@`-symbol as a prefix.
 
 
 ## Test Result Presentation
