@@ -78,7 +78,7 @@ Running a parameterized test works just the same as running a regular test case 
 
 As you can see, each run through the test adds a new sub-tree to the result view. The results are organized in the same order as the rows in the test data. In large data sets, you can always look out for `preVariables` and `postVariables` in the test execution details view. 
 
-![screencase: test execution details](/images/tutorial/tutorial.heroes.create.parameterized.testcase.5.test-execution-details.gif "screencast: test execution details")
+![screencase: test execution details](/images/tutorial/tutorial.heroes.create.parameterized.testcase.5.test-execution-details.png "screencast: test execution details")
 
 Here, you'll find the actual values used for any variables relevant to a particular test steps. This should make it easier to track down the test data values responsible for assertion errors. Of course, if there are failing assertions or other errors in test steps, those steps will be marked red in the test execution navigator as usual. Therefore, you should never have to sift through all the test steps of all the iterations through your test data, and instead can always navigate directly to the problematic test steps.
 
