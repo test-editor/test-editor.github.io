@@ -13,7 +13,7 @@ Note that this is an advanced tutorial. It builds on the introductory tutorials 
 
 ## How do I write parameterized test cases?
 
-For this example, the test case created in the [previous tutorial](/te_markdown/heroes-create-testcase) will be extended to a parameterized test. Therefore, the software under test continues to be the Angular "Tour of Heroes"-Tutoria (see [here](https://angular.io/tutorial)).
+For this example, the test case created in the [previous tutorial](/te_markdown/heroes-create-testcase) will be extended to a parameterized test. Therefore, the software under test continues to be the [Angular "Tour of Heroes"-Tutorial](https://angular.io/tutorial).
 
 
 ### Modifying the Specification
