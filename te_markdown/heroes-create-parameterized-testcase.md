@@ -116,8 +116,9 @@ You can run the test now, and it should work exactly like before when we used a 
 
 ### Loading Data from JSON and YAML Files
 
-Both JSON and YAML files allow for a hierarchical structure of the contained data, that can be useful for more complex test data. The two formats allow to model basically the same kinds of structures, just with different notations. This is how you can express the data we have been using throughout this tutorial as JSON:
+Both JSON and YAML files allow for a hierarchical structure of the contained data, that can be useful for more complex test data. The two formats allow to model basically the same kinds of structures, just with different notations. To load data in these formats, the `ParameterizedTesting` component offers corresponding data loading steps, e.g. `load from JSON file "org/testeditor/heroes/heroes.json"` and `load from YAML file "org/testeditor/heroes/heroes.yaml"`.
 
+This is how you can express the data we have been using throughout this tutorial as JSON:
 ```
 [
 	{ "name": "Sancho", "listEntry": "21 Sancho" },
@@ -127,7 +128,6 @@ Both JSON and YAML files allow for a hierarchical structure of the contained dat
 ```
 
 And the same in YAML format:
-
 ```
 - name: Sancho
   listEntry: 21 Sancho
