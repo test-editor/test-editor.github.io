@@ -52,16 +52,16 @@ Probably not suited for larger data sets, but perfect for this initial, simple e
 
 The test data itself, as defined by our table, is structured as follows: we have two columns, the first contains the name of the hero we are going to add, and the second column contains the content of the list entry we expect to see after adding the hero. This is just the hero's name prefixed with its index number in the list. With this data, our test will be executed once for every row in the table. 
 
-> :bulb: The test are (and should be) isolated from each other, i.e. each iteration starts the test scenario from scratch. Therefore, we expect every hero to be the 21st in the list -- previous test runs will not have an effect on later ones.
+> :bulb: The test are (and should be) isolated from each other, i.e. each iteration starts the test scenario from scratch. Therefore, we expect every hero to be the 21st in the list – previous test runs will not have an effect on later ones.
 
 
 ### Using the Test Data
 
-If we'd run our test now, it would be executed three times -- once for every row in our test data. However, our test scenario will still be the same every time, as we do not actually use the data. To change that, we make two more modifications to our test case:
+If we'd run our test now, it would be executed three times – once for every row in our test data. However, our test scenario will still be the same every time, as we do not actually use the data. To change that, we make two more modifications to our test case:
 
 ![screencase: use data](/images/tutorial/tutorial.heroes.create.parameterized.testcase.3.use-data.gif "screencast: use data")
 
-Instead of entering the name "Sancho" every time, we now use our `heroes` variable to retrieve the name to enter into the field from our test data. Instead of the fixed value enclosed in double quotes, we use the `@`-symbol to indicate that we want to use a variable. As usual, `STRG` + `SPACE` will assist you by providing a list of available variables. To refer to a particular column, we use that column's name as defined in the header of our table, and append it to the heroes variable, separated with a dot. We end up with `@heroes.name` -- when the test is run, this will be replaced by the value in our table, in the row corresponding to the current test execution iteration.
+Instead of entering the name "Sancho" every time, we now use our `heroes` variable to retrieve the name to enter into the field from our test data. Instead of the fixed value enclosed in double quotes, we use the `@`-symbol to indicate that we want to use a variable. As usual, `STRG` + `SPACE` will assist you by providing a list of available variables. To refer to a particular column, we use that column's name as defined in the header of our table, and append it to the heroes variable, separated with a dot. We end up with `@heroes.name` – when the test is run, this will be replaced by the value in our table, in the row corresponding to the current test execution iteration.
 
 Further down in our test case, we also modify our expectation regarding the last entry in the list of heroes after adding a new one. As before, we replace the fixed value with a reference to the `heroes` variable. In an assert statement like this, we can forego the `@`-symbol and just type the variable (or choose it from the list provided by content assist). We need to compare the actual value present on the heroes page with the value in our data table's second column, so we write `heroes.listEntry`.
 
@@ -72,7 +72,7 @@ And that's it! You have created your first parameterized test case with the Test
 
 ## Test Result Presentation
 
-Running a parameterized test works just the same as running a regular test case -- only now, it will automatically be executed once for every row in the test data. In the test execution navigator, it looks like this:
+Running a parameterized test works just the same as running a regular test case – only now, it will automatically be executed once for every row in the test data. In the test execution navigator, it looks like this:
 
 ![screencase: parameterized test execution](/images/tutorial/tutorial.heroes.create.parameterized.testcase.4.parameterized-test-execution.gif "screencast: parameterized test execution")
 
