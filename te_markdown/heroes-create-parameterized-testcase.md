@@ -177,7 +177,7 @@ To use this data, you can refer to it in the Test-Editor: to navigate nesting hi
     ```
     processResources {
         from ('src/test/java') {
-	    include '**/*.csv'
+            include '**/*.csv'
             include '**/*.json'
             include '**/*.yaml'
         }
