@@ -172,13 +172,11 @@ To use this data, you can refer to it in the Test-Editor: to navigate nesting hi
 
 ----
 
-[^1]: A note for developers: for the tests to be able to find the test data files, they must be on the classpath. This can be configured in the workspace's `build.gradle` file like so:
-```
+[^1]: A note for developers: for the tests to be able to find the test data files, they must be on the classpath. This can be configured in the workspace's `build.gradle` file like so: ```
 processResources {
 	from ('src/test/java') {
 		include '**/*.csv'
 		include '**/*.json'
 		include '**/*.yaml'
 	}
-}
-```
+}```
