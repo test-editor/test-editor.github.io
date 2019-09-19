@@ -8,6 +8,8 @@ permalink: /te_markdown/tutorials/
 
 * [Writing Test Cases ](/te_markdown/heroes-create-testcase)
 
+* [Writing Parameterized Test Cases ](/te_markdown/heroes-create-parameterized-testcase)
+
 * [Writing an Application Mapping](/te_markdown/heroes-create-aml)
 
 * [Test Execution and Reports ](/te_markdown/heroes-create-testcase-execution)
