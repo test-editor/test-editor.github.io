@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Tutorial: test case \"create hero\""
+title: "Tutorial: Parameterized Test Case \"Create Hero\""
 permalink: /te_markdown/heroes-create-parameterized-testcase/
 ---
 
