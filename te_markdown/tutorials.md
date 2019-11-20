@@ -14,6 +14,8 @@ permalink: /te_markdown/tutorials/
 
 * [Test Execution and Reports ](/te_markdown/heroes-create-testcase-execution)
 
+* [Using hidden login credentials](/te_markdown/define-password) 
+
 * Continuous Integration (soon to be described ...)
 
 * Tips and Tricks (soon to be described ...)
