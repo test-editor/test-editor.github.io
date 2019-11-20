@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Tutorial: Define Passwords"
-permalink: /te_markdown/define-passwords/
+permalink: /te_markdown/define-password/
 ---
 
 Estimated reading time: 5 minutes
