@@ -29,7 +29,7 @@ Olaf Lange
 Thomas Muszal
 Thomas Tauer
 Till Vieregge
-Michael Wienke  
+Olaf Zöftig
 ```
 ### Registergericht
 ```
@@ -86,8 +86,8 @@ Ulrich Leitermann (Vorsitzender)
 Dr. jur. Christian Bielefeld
 Martin Berger
 Dr. Karl-Josef Bierth
-Michael Johnigk
 Dr. Stefan Kutz
+Torsten Uhlig
 Clemens Vatter
 ```
 ### Aufsichtsbehörde
